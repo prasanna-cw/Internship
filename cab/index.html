@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VENBA TRAVELS - Cab Booking System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>VENBA TRAVELS</h1>
+    <h2>Cab Booking System</h2>
+  </div>
+  <div class="container">
+    <form>
+      <h3>Choose Your Cab Details</h3>
+      <label for="pickup-location">Pickup Location:</label>
+      <input type="text" id="pickup-location" name="pickup-location" required>
+      <label for="drop-location">Drop Location:</label>
+      <input type="text" id="drop-location" name="drop-location" required>
+      <label for="cab-type">Cab Type:</label>
+      <select id="cab-type" name="cab-type">
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="hatchback">Hatchback</option>
+      </select>
+      <label for="pickup-date">Pickup Date:</label>
+      <input type="date" id="pickup-date" name="pickup-date" required>
+      <label for="pickup-time">Pickup Time:</label>
+      <input type="time" id="pickup-time" name="pickup-time" required>
+      <input type="submit" value="Book Now">
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

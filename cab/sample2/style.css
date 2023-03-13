@@ -1,0 +1,78 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  header {
+    background-color: #f1c40f;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  main form input[type="text"],
+  main form select,
+  main form input[type="date"],
+  main form input[type="time"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  main form button[type="submit"] {
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  main form button[type="submit"]:hover {
+    background-color: #e67e22;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    main form {
+      max-width: 400px;
+    }
+  }
+  
